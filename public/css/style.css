@@ -1,0 +1,186 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  min-width: 960px;
+}
+.banner {
+  background-image: url("/media/banner.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+}
+.banner_text {
+  z-index: 100;
+  color: white;
+  width: 350px;
+  height: 300px;
+  margin: 0 auto;
+  padding-top: 300px;
+  padding-left: 375px;
+}
+.banner_text_main {
+  font-size: 4.0em;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+.banner_text_sub {
+  margin-top: 20px;
+  font-size: 2.0em;
+}
+.kickstarter {
+  width: 100%;
+  height: 33vh;
+  text-align: center;
+  margin: 40px auto;
+}
+.kickstarter_text {
+  font-size: 2.0em;
+  color: #333;
+  padding-bottom: 30px;
+}
+.kickstarter a {
+  text-decoration: none;
+}
+.kickstarter_link.coming_soon {
+  background-color: #555 !important;
+}
+.kickstarter_link {
+  background-color: #2bde73;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  margin: 20px auto 0 auto;
+  color: white;
+}
+.collection {
+  width: 100%;
+  background-color: #ddd;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.collection_text {
+  font-size: 2.0em;
+  color: #333;
+  padding: 20px;
+}
+.item {
+  width: 420px;
+  height: 560px;
+  display: inline-block;
+  margin: 20px;
+  background-size: cover;
+  position: relative;
+  box-shadow: 5px 5px 10px #ccc;
+  position: relative;
+}
+.item_overlay {
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0.0;
+}
+.item_text {
+  color: white;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0.0;
+}
+.item_text .description { 
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+.item_text .price { 
+  font-size: 1.3em;
+}
+.item:hover .item_overlay, 
+.item:hover .item_text {
+  opacity:1.0;
+  filter:alpha(opacity=100);/*position where      
+  enlarged image should offset horizontally */
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; 
+}
+#concrete_tabletop { background-image: url("../media/tabletop_concrete.png"); }
+#mirror { background-image: url("../media/mirror.png"); }
+#pillar { background-image: url("../media/pillar.png"); }
+#marble_tabletop { background-image: url("../media/tabletop_marble.png");}
+
+.features {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.feature {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+}
+.feature_two {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.feature img {
+  width: 180px;
+  height: 180px;
+  background-color: #ccc;
+}
+.feature_text_heading {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.feature_text {
+  width: 260px;
+  margin: 20px;
+  text-align: center;
+}
+.gallery {
+  width: 960px;
+  height: 500px;
+  background-color: pink;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  box-shadow: 5px 5px 10px #ccc;
+  position: relative;
+}
+.gallery_image {
+  display: none;
+  width: 960px;
+  height: 500px;
+  position: absolute;
+}
+.gallery_image.active {
+  display: block;
+}
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.8em;
+  border-radius: 20px;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 25%;
+  color: #333;
+}
+.next {
+  right: 20px;
+}
+.prev {
+  left: 20px;
+}
+
