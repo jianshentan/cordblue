@@ -65,6 +65,11 @@ body {
   color: #333;
   padding: 20px;
 }
+.collection_text_sub {
+  width: 720px;
+  margin: 20px auto;
+  font-size: 1.6em;
+}
 .item {
   width: 420px;
   height: 560px;
